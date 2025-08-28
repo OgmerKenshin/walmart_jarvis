@@ -35,7 +35,8 @@ Conversation_override = {
 }
 
 config = ConversationConfig(
-    Conversation_config_override=Conversation_override,
+    user_id = "Kenshin Ogmer",
+    conversation_config_override=Conversation_override,
     extra_body={},
     dynamic_variables={},
 )
