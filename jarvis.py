@@ -12,6 +12,11 @@ load_dotenv()
 
 AGENT_ID = os.getenv("AGENT_ID")
 API_KEY = os.getenv("API_KEY")
+print(f"Loaded API Key: {API_KEY}")
+if not API_KEY or not AGENT_ID:
+    raise ValueError("Missing API_KEY or AGENT_ID. Check your .env file and variable names.")
+
+
 
 #informing jarvis of user's existence
 user_name = "Kenshin"
