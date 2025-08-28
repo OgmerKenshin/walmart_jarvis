@@ -44,3 +44,12 @@ Conversation = Conversation(
     requires_auth=True,
     audio_interface=DefaultAudioInterface(),
 )
+
+def print_agent_response(response):
+    print(f"Agent: {response}")
+
+def print_interrupted_response(original, corrected):
+    print(f"Agent interrupted, truncated response: {corrected}")
+
+def print_user_transcript(transcript):
+    print(f"User: {transcript}")
