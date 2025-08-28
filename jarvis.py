@@ -18,3 +18,13 @@ user_name = "Kenshin"
 schedule = "Picking up little brother from school at 2pm, Going to gym straight after that"
 prompt = f"You are a helpful assistant that acts like Jarvis from Ironman, hence the name. You will also help around with video games, computer technology for gamers and random stuff throughout the day. I have included a schedule here {schedule} "
 first_message = f"Greetings {user_name}, to what do I owe the pleasure today?"
+
+
+Conversation_override = {
+    "agent": {
+        "prompt":{
+            "prompt": prompt,
+        },
+        "first_message": first_message,
+    },
+}
