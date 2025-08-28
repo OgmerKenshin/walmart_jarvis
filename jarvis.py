@@ -28,3 +28,19 @@ Conversation_override = {
         "first_message": first_message,
     },
 }
+
+config = ConversationConfig(
+    Conversation_config_override=Conversation_override,
+    extra_body={},
+    dynamic_variables={},
+)
+
+client = ElevenLabs(api_key=API_KEY)
+
+Conversation = Conversation(
+    client,
+    AGENT_ID,
+    config=config,
+    requires_auth=True,
+    audio_interface=DefaultAudioInterface(),
+)
